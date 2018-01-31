@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Helmet from 'react-helmet';
-
+import prism from 'prismjs';
+import 'prismjs/themes/prism-twilight.css';
 const Template = ({
   data: {
     markdownRemark: post,

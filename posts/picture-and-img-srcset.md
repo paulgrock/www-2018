@@ -16,7 +16,7 @@ From what I can tell the picture element while very important won't be used as m
 
 With addition of `srcset` and `sizes` developers can give browsers the information they need to intelligently switch between an array of images. This is done using the `srcset` attribute which provides a list of images and specifies the width or resolution of the image. The other new addition to `img` is `sizes` which tells the browser the viewport relative or absolute size the image is to be rendered at. Below is an `img` with the new attributes.
 
-```language-markup
+``` markup
 <img src="400x300.gif"
      srcset="400x300.gif 400w,
              600x300.gif 600w,
