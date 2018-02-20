@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Paul Grock <paulgrock@gmail.com>",
   "dependencies": {
+    "@jacobmischka/gatsby-plugin-react-svg": "^1.0.0",
     "gatsby": "^1.9.172",
     "gatsby-link": "^1.6.35",
     "gatsby-plugin-catch-links": "^1.0.15",
@@ -12,8 +13,7 @@
     "gatsby-source-filesystem": "^1.5.15",
     "gatsby-transformer-remark": "^1.7.30",
     "prismjs": "^1.10.0",
-    "react-helmet": "^5.2.0",
-    "react-svg": "^2.2.10"
+    "react-helmet": "^5.2.0"
   },
   "keywords": [
     "gatsby"

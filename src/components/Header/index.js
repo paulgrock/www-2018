@@ -1,12 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ReactSVG from 'react-svg';
+import Logo from "../../../static/images/logo.svg";
+import Github from "../../../static/images/icons/github.svg";
+import LinkedIn from "../../../static/images/icons/linkedin.svg";
+import Twitter from "../../../static/images/icons/twitter.svg";
 
 const Header = () => (
   <header className="site-header">
     <div className="site-header__inner">
       <Link to="/">
-        <ReactSVG path="/images/logo.svg" className="logo--pg" />
+        <Logo />
       </Link>
       <h1 className="page__title">paulgrock.com</h1>
       <h3 className="page__description">Thoughts on building things on the web.</h3>
@@ -18,20 +21,17 @@ const Header = () => (
         </li>
         <li className="nav-list__item">
           <a href="//github.com/paulgrock" className="social-links">
-            <ReactSVG
-              path="/images/icons/github.svg" />
+            <Github style={{width: '32px', height: '32px'}} />
           </a>
         </li>
         <li className="nav-list__item">
           <a href="//twitter.com/paulgrock" className="social-links">
-            <ReactSVG
-              path="/images/icons/twitter.svg" />
+            <Twitter style={{width: '32px', height: '32px'}} />
           </a>
         </li>
         <li className="nav-list__item">
           <a href="//linkedin.com/in/paulgrock" className="social-links">
-            <ReactSVG
-              path="/images/icons/linkedin.svg" />
+            <LinkedIn style={{width: '32px', height: '32px'}} />
           </a>
         </li>
       </ul>

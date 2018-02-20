@@ -35,7 +35,7 @@ The `srcset` attribute contains a comma separated list of `img src`s and their w
 
 The reason the image changes based on the full viewport width is because of the sizes attribute. Since it is set to 100vw we are telling the browser that the image is going to be rendered at the same width as the viewport. If we changed the sizes attribute to `50vw` as shown below then the source images would change just above 800, 1200 and 1600, respectively.
 
-```language-markup
+``` markup
 <img src="400x300.gif"
      srcset="400x300.gif 400w,
              600x300.gif 600w,
@@ -47,7 +47,7 @@ The reason the image changes based on the full viewport width is because of the 
 In addition to taking just a relative width or fixed width you can use a media query before each sizes attribute. One thing to remember about sizes is the browser chooses which ever evaluates to true first. Mobile first sites should place the largest media query first while desktop first should use the largest last. The default size should always be last. The media query syntax is shown below. That `sizes` attribute tells the browser that above 30em the image is going to be displayed at half the view port width, any other time the image will be 100% of the view port.
 
 
-```language-markup
+``` markup
 <img src="400x300.gif"
      srcset="400x300.gif 400w,
              600x300.gif 600w,
@@ -57,7 +57,7 @@ In addition to taking just a relative width or fixed width you can use a media q
 ```
 <small>Mobile first</small>
 
-```language-markup
+``` markup
 <img src="400x300.gif"
      srcset="400x300.gif 400w,
              600x300.gif 600w,
@@ -71,7 +71,7 @@ In addition to taking just a relative width or fixed width you can use a media q
 
 There is a slightly simpler use for `srcset` if you're solely interested in switching images based on display resolution.
 
-```language-markup
+``` markup
 <img src="300x300.gif"
      srcset="300x300.gif 1x,
              600x600.gif 2x"

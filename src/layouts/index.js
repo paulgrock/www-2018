@@ -16,7 +16,7 @@ const TemplateWrapper = (props) => {
     }
   } = props;
   return (
-    <div>
+    <main className="main-content-container">
       <Helmet
         title={siteMetadata.title}
         meta={[
@@ -29,7 +29,7 @@ const TemplateWrapper = (props) => {
         {children({...props, siteMetadata})}
       </div>
       <Footer />
-    </div>
+    </main>
   )
 }
 
