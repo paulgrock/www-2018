@@ -10,6 +10,9 @@ const IndexPage = ({
 }) => {
   return (
     <div>
+      <Helmet>
+        <meta name="theme-color" content="#00b0d8">
+      </Helmet>
       {posts
         .filter(({node: post}) => post.frontmatter.title.length !== 0)
         .map(({node: post}) => {
